@@ -1,0 +1,33 @@
+{
+  "nodes": {
+    "start": {
+      "component": "SourceSin",
+      "type": "Source",
+      "label": "10V",
+      "direction": "up",
+      "connections": "node1"
+    },
+    "node1": {
+      "component": "Resistor",
+      "type": "Passive",
+      "label": "R1",
+      "value": "1Ω",
+      "direction": "right",
+      "connections": "node2"
+    },
+    "node2": {
+      "component": "Capacitor",
+      "type": "Passive",
+      "label": "10uF",
+      "value": "10µF",
+      "direction": "down",
+      "connections": "node3"
+    },
+    "node3": {
+      "component": "Wire",
+      "type": "Connection",
+      "label": "",
+      "direction": "left"
+    }
+  }
+}
