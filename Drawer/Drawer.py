@@ -6,7 +6,7 @@ import json
 schemdraw.theme('dark')
 # Function to draw the circuit from JSON
 def draw_circuit_from_json():
-    with schemdraw.Drawing(file='.\schema.svg', show=False) as d:
+    with schemdraw.Drawing(file='./Drawer/response/schema.svg', show=False) as d:
         json_obj = sys.argv[2]
         circuit = json.loads(json_obj)
 
